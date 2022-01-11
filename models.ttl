@@ -13,16 +13,18 @@
                                        owl:imports <http://emmo.info/emmo/1.0.0-beta2/domain/metrology> ;
 									       #        <http://emmo.info/emmo/1.0.0-beta2/middle/properties> ;
                                        dcterms:abstract "The models module defines models as semiotic signs that stands for an object by resembling or imitating it, in shape or by sharing a similar logical structure."@en ;
-                                       dcterms:contributor "Access, DE" ,
-                                                           "Fraunhofer IWM, DE" ,
-                                                           "Goldbeck Consulting Ltd (UK)" ,
-                                                           "SINTEF, NO" ,
-                                                           "University of Bologna, IT" ;
+                                       dcterms:contributor    "Access Technology (DE)" ,
+                                                              "Fraunhofer IWM (DE)" ,
+                                                              "Goldbeck Consulting Ltd (UK)" ,
+                                                              "SINTEF (NO)" ,
+                                                              "University of Bologna (IT)" ;
                                        dcterms:creator "Adham Hashibon" ,
+                                                       "Daniele Toti" ,
                                                        "Emanuele Ghedini" ,
                                                        "Georg Schmitz" ,
                                                        "Gerhard Goldbeck" ,
-                                                       "Jesper Friis" ;
+                                                       "Jesper Friis" ,
+                                                       "Pierluigi Del Nostro" ;
                                        dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
                                        dcterms:publisher "EMMC ASBL" ;
                                        dcterms:title "Models"@en ;

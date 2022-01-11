@@ -12,16 +12,18 @@
                                           owl:versionIRI <http://emmo.info/emmo/1.0.0-beta2/domain/materials> ;
                                           owl:imports <http://emmo.info/emmo/1.0.0-beta2/middle/physicalistic> ;
                                           dcterms:abstract "The materials module populates the physicalistic perspective with materials subclasses categorised according to modern applied physical sciences."@en ;
-                                          dcterms:contributor "Access, DE" ,
-                                                              "Fraunhofer IWM, DE" ,
+                                          dcterms:contributor "Access Technology (DE)" ,
+                                                              "Fraunhofer IWM (DE)" ,
                                                               "Goldbeck Consulting Ltd (UK)" ,
-                                                              "SINTEF, NO" ,
-                                                              "University of Bologna, IT" ;
+                                                              "SINTEF (NO)" ,
+                                                              "University of Bologna (IT)" ;
                                           dcterms:creator "Adham Hashibon" ,
+                                                          "Daniele Toti" ,
                                                           "Emanuele Ghedini" ,
-                                                          "Georg Schmitz" ,
+                                                          "Georg J. Schmitz" ,
                                                           "Gerhard Goldbeck" ,
-                                                          "Jesper Friis" ;
+                                                          "Jesper Friis" ,
+                                                          "Pierluigi Del Nostro" ;
                                           dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
                                           dcterms:publisher "EMMC ASBL" ;
                                           dcterms:title "Materials"@en ;

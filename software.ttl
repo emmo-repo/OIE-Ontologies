@@ -5,19 +5,20 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @base <http://www.semanticweb.org/yoav/ontologies/2021/0/software-ontology> .
 
-<http://emmo.info/emmo/application/software-ontology> rdf:type owl:Ontology ;
-                                                                       owl:imports <http://emmo.info/emmo/1.0.0-beta2/domain/manufacturing> ;
-                                                                       rdfs:label """Contacts:
-Youness Bami
-Access Technology (DE)
-email: y.bami@access.rwth-aachen.de
 
-Georg J. Schmitz
-Access Technology (DE)
-email: g.schmitz@access.rwth-aachen.de""" ;
-                                                                       owl:versionInfo 0.1 .
+<http://emmo.info/emmo/application/software-ontology> rdf:type owl:Ontology ;
+                                       owl:imports <http://emmo.info/emmo/1.0.0-beta2/domain/manufacturing> ;
+                                       dcterms:contributor "Access Technology (DE)" ,
+                                                           "Goldbeck Consulting Ltd (UK)" ;
+                                       dcterms:creator "Daniele Toti" ,
+                                                       "Georg J. Schmitz" ,
+                                                       "Gerhard Goldbeck" ,
+                                                       "Youness Bami" ,
+                                                       "Pierluigi Del Nostro" ;
+                                       owl:versionInfo 0.1 .
 
 #################################################################
 #    Classes
