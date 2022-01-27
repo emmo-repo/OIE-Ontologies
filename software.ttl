@@ -1,4 +1,4 @@
-@prefix software: <http://emmo.info/emmo/application/software-ontology#> .
+@prefix software: <http://emmo.info/emmo/domain/software#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -9,8 +9,8 @@
 @base <http://www.semanticweb.org/yoav/ontologies/2021/0/software-ontology> .
 
 
-<http://emmo.info/emmo/application/software> rdf:type owl:Ontology ;
-                                       # owl:imports <http://emmo.info/emmo/1.0.0-beta2/domain/manufacturing> ;
+<http://emmo.info/emmo/domain/software> rdf:type owl:Ontology ;
+                                       # owl:imports <http://emmo.info/emmo/domain/manufacturing> ;
                                        dcterms:contributor "Access Technology (DE)" ,
                                                            "Goldbeck Consulting Ltd (UK)" ;
                                        dcterms:creator "Daniele Toti" ,
@@ -24,974 +24,974 @@
 #    Classes
 #################################################################
 
-###  http://emmo.info/emmo/application/software#AMBER
-<http://emmo.info/emmo/application/software#AMBER> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#AMBER
+<http://emmo.info/emmo/domain/software#AMBER> rdf:type owl:Class ;
 										skos:prefLabel "AMBER"@en ;
-                                                                rdfs:subClassOf <http://emmo.info/emmo/application/software#Atomistic_software> .
+                                                                rdfs:subClassOf <http://emmo.info/emmo/domain/software#Atomistic_software> .
 
 
-###  http://emmo.info/emmo/application/software#Atomistic_software
-<http://emmo.info/emmo/application/software#Atomistic_software> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Atomistic_software
+<http://emmo.info/emmo/domain/software#Atomistic_software> rdf:type owl:Class ;
 										skos:prefLabel "Atomistic software"@en ;
-                                                                             rdfs:subClassOf <http://emmo.info/emmo/application/software#Modelling_software> .
+                                                                             rdfs:subClassOf <http://emmo.info/emmo/domain/software#Modelling_software> .
 
 
-###  http://emmo.info/emmo/application/software#DLPoly
-<http://emmo.info/emmo/application/software#DLPoly> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#DLPoly
+<http://emmo.info/emmo/domain/software#DLPoly> rdf:type owl:Class ;
 										skos:prefLabel "DLPoly"@en ;
-                                                                 rdfs:subClassOf <http://emmo.info/emmo/application/software#Atomistic_software> .
+                                                                 rdfs:subClassOf <http://emmo.info/emmo/domain/software#Atomistic_software> .
 
 
-###  http://emmo.info/emmo/application/software#GULP
-<http://emmo.info/emmo/application/software#GULP> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#GULP
+<http://emmo.info/emmo/domain/software#GULP> rdf:type owl:Class ;
 										skos:prefLabel "GULP"@en ;
-                                                               rdfs:subClassOf <http://emmo.info/emmo/application/software#Atomistic_software> .
+                                                               rdfs:subClassOf <http://emmo.info/emmo/domain/software#Atomistic_software> .
 
 
-###  http://emmo.info/emmo/application/software#Gromacs
-<http://emmo.info/emmo/application/software#Gromacs> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Gromacs
+<http://emmo.info/emmo/domain/software#Gromacs> rdf:type owl:Class ;
 										skos:prefLabel "Gromacs"@en ;
-                                                                  rdfs:subClassOf <http://emmo.info/emmo/application/software#Atomistic_software> .
+                                                                  rdfs:subClassOf <http://emmo.info/emmo/domain/software#Atomistic_software> .
 
 
-###  http://emmo.info/emmo/application/software#ITAP-IMD
-<http://emmo.info/emmo/application/software#ITAP-IMD> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#ITAP-IMD
+<http://emmo.info/emmo/domain/software#ITAP-IMD> rdf:type owl:Class ;
 										skos:prefLabel "ITAP-IMD"@en ;
-                                                                   rdfs:subClassOf <http://emmo.info/emmo/application/software#Atomistic_software> .
+                                                                   rdfs:subClassOf <http://emmo.info/emmo/domain/software#Atomistic_software> .
 
 
-###  http://emmo.info/emmo/application/software#LAMMPS
-<http://emmo.info/emmo/application/software#LAMMPS> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#LAMMPS
+<http://emmo.info/emmo/domain/software#LAMMPS> rdf:type owl:Class ;
 										skos:prefLabel "LAMMPS"@en ;
-                                                                 rdfs:subClassOf <http://emmo.info/emmo/application/software#Atomistic_software> .
+                                                                 rdfs:subClassOf <http://emmo.info/emmo/domain/software#Atomistic_software> .
 
 
-###  http://emmo.info/emmo/application/software#Moldy
-<http://emmo.info/emmo/application/software#Moldy> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Moldy
+<http://emmo.info/emmo/domain/software#Moldy> rdf:type owl:Class ;
 										skos:prefLabel "Moldy"@en ;
-                                                                rdfs:subClassOf <http://emmo.info/emmo/application/software#Atomistic_software> .
+                                                                rdfs:subClassOf <http://emmo.info/emmo/domain/software#Atomistic_software> .
 
 
-###  http://emmo.info/emmo/application/software#NAMD
-<http://emmo.info/emmo/application/software#NAMD> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#NAMD
+<http://emmo.info/emmo/domain/software#NAMD> rdf:type owl:Class ;
 										skos:prefLabel "NAMD"@en ;
-                                                               rdfs:subClassOf <http://emmo.info/emmo/application/software#Atomistic_software> .
+                                                               rdfs:subClassOf <http://emmo.info/emmo/domain/software#Atomistic_software> .
 
 
-###  http://emmo.info/emmo/application/software#AnyCasting
-<http://emmo.info/emmo/application/software#AnyCasting> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#AnyCasting
+<http://emmo.info/emmo/domain/software#AnyCasting> rdf:type owl:Class ;
 										skos:prefLabel "AnyCasting"@en ;
-                                            rdfs:subClassOf <http://emmo.info/emmo/application/software#Casting_Process_software> .
+                                            rdfs:subClassOf <http://emmo.info/emmo/domain/software#Casting_Process_software> .
 
 
-###  http://emmo.info/emmo/application/software#CADmould
-<http://emmo.info/emmo/application/software#CADmould> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#CADmould
+<http://emmo.info/emmo/domain/software#CADmould> rdf:type owl:Class ;
 										skos:prefLabel "CADmould"@en ;
-                                          rdfs:subClassOf <http://emmo.info/emmo/application/software#Casting_Process_software> .
+                                          rdfs:subClassOf <http://emmo.info/emmo/domain/software#Casting_Process_software> .
 
 
-###  http://emmo.info/emmo/application/software#Casting_Process_software
-<http://emmo.info/emmo/application/software#Casting_Process_software> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Casting_Process_software
+<http://emmo.info/emmo/domain/software#Casting_Process_software> rdf:type owl:Class ;
 										skos:prefLabel "Casting Process software"@en ;
-                                                          rdfs:subClassOf <http://emmo.info/emmo/application/software#Continuum_software> .
+                                                          rdfs:subClassOf <http://emmo.info/emmo/domain/software#Continuum_software> .
 
 
-###  http://emmo.info/emmo/application/software#EKKCapCast
-<http://emmo.info/emmo/application/software#EKKCapCast> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#EKKCapCast
+<http://emmo.info/emmo/domain/software#EKKCapCast> rdf:type owl:Class ;
 										skos:prefLabel "EKKCapCast"@en ;
-                                            rdfs:subClassOf <http://emmo.info/emmo/application/software#Casting_Process_software> .
+                                            rdfs:subClassOf <http://emmo.info/emmo/domain/software#Casting_Process_software> .
 
 
-###  http://emmo.info/emmo/application/software#Flow3D
-<http://emmo.info/emmo/application/software#Flow3D> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Flow3D
+<http://emmo.info/emmo/domain/software#Flow3D> rdf:type owl:Class ;
 										skos:prefLabel "Flow3D"@en ;
-                                        rdfs:subClassOf <http://emmo.info/emmo/application/software#Casting_Process_software> .
+                                        rdfs:subClassOf <http://emmo.info/emmo/domain/software#Casting_Process_software> .
 
 
-###  http://emmo.info/emmo/application/software#Magmasoft
-<http://emmo.info/emmo/application/software#Magmasoft> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Magmasoft
+<http://emmo.info/emmo/domain/software#Magmasoft> rdf:type owl:Class ;
 										skos:prefLabel "Magmasoft"@en ;
-                                           rdfs:subClassOf <http://emmo.info/emmo/application/software#Casting_Process_software> .
+                                           rdfs:subClassOf <http://emmo.info/emmo/domain/software#Casting_Process_software> .
 
 
-###  http://emmo.info/emmo/application/software#MavisFlow
-<http://emmo.info/emmo/application/software#MavisFlow> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#MavisFlow
+<http://emmo.info/emmo/domain/software#MavisFlow> rdf:type owl:Class ;
 										skos:prefLabel "MavisFlow"@en ;
-                                           rdfs:subClassOf <http://emmo.info/emmo/application/software#Casting_Process_software> .
+                                           rdfs:subClassOf <http://emmo.info/emmo/domain/software#Casting_Process_software> .
 
 
-###  http://emmo.info/emmo/application/software#MeltFlow
-<http://emmo.info/emmo/application/software#MeltFlow> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#MeltFlow
+<http://emmo.info/emmo/domain/software#MeltFlow> rdf:type owl:Class ;
 										skos:prefLabel "MeltFlow"@en ;
-                                          rdfs:subClassOf <http://emmo.info/emmo/application/software#Casting_Process_software> .
+                                          rdfs:subClassOf <http://emmo.info/emmo/domain/software#Casting_Process_software> .
 
 
-###  http://emmo.info/emmo/application/software#ProCast
-<http://emmo.info/emmo/application/software#ProCast> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#ProCast
+<http://emmo.info/emmo/domain/software#ProCast> rdf:type owl:Class ;
 										skos:prefLabel "ProCast"@en ;
-                                         rdfs:subClassOf <http://emmo.info/emmo/application/software#Casting_Process_software> .
+                                         rdfs:subClassOf <http://emmo.info/emmo/domain/software#Casting_Process_software> .
 
 
-###  http://emmo.info/emmo/application/software#STAR-Cast
-<http://emmo.info/emmo/application/software#STAR-Cast> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#STAR-Cast
+<http://emmo.info/emmo/domain/software#STAR-Cast> rdf:type owl:Class ;
 										skos:prefLabel "STAR-Cast"@en ;
-                                           rdfs:subClassOf <http://emmo.info/emmo/application/software#Casting_Process_software> .
+                                           rdfs:subClassOf <http://emmo.info/emmo/domain/software#Casting_Process_software> .
 
 
-###  http://emmo.info/emmo/application/software#Sigma
-<http://emmo.info/emmo/application/software#Sigma> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Sigma
+<http://emmo.info/emmo/domain/software#Sigma> rdf:type owl:Class ;
 										skos:prefLabel "Sigma"@en ;
-                                       rdfs:subClassOf <http://emmo.info/emmo/application/software#Casting_Process_software> .
+                                       rdfs:subClassOf <http://emmo.info/emmo/domain/software#Casting_Process_software> .
 
 
-###  http://emmo.info/emmo/application/software#SutCast
-<http://emmo.info/emmo/application/software#SutCast> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#SutCast
+<http://emmo.info/emmo/domain/software#SutCast> rdf:type owl:Class ;
 										skos:prefLabel "SutCast"@en ;
-                                         rdfs:subClassOf <http://emmo.info/emmo/application/software#Casting_Process_software> .
+                                         rdfs:subClassOf <http://emmo.info/emmo/domain/software#Casting_Process_software> .
 
 
-###  http://emmo.info/emmo/application/software#TherCast
-<http://emmo.info/emmo/application/software#TherCast> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#TherCast
+<http://emmo.info/emmo/domain/software#TherCast> rdf:type owl:Class ;
 										skos:prefLabel "TherCast"@en ;
-                                          rdfs:subClassOf <http://emmo.info/emmo/application/software#Casting_Process_software> .
+                                          rdfs:subClassOf <http://emmo.info/emmo/domain/software#Casting_Process_software> .
 
 
-###  http://emmo.info/emmo/application/software#Vulcan
-<http://emmo.info/emmo/application/software#Vulcan> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Vulcan
+<http://emmo.info/emmo/domain/software#Vulcan> rdf:type owl:Class ;
 										skos:prefLabel "Vulcan"@en ;
-                                        rdfs:subClassOf <http://emmo.info/emmo/application/software#Casting_Process_software> .
+                                        rdfs:subClassOf <http://emmo.info/emmo/domain/software#Casting_Process_software> .
 
 
-###  http://emmo.info/emmo/application/software#WinCast
-<http://emmo.info/emmo/application/software#WinCast> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#WinCast
+<http://emmo.info/emmo/domain/software#WinCast> rdf:type owl:Class ;
 										skos:prefLabel "WinCast"@en ;
-                                         rdfs:subClassOf <http://emmo.info/emmo/application/software#Casting_Process_software> .
+                                         rdfs:subClassOf <http://emmo.info/emmo/domain/software#Casting_Process_software> .
 
 
-###  http://emmo.info/emmo/application/software#ADF_molecular_modeling_suite
-<http://emmo.info/emmo/application/software#ADF_molecular_modeling_suite> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#ADF_molecular_modeling_suite
+<http://emmo.info/emmo/domain/software#ADF_molecular_modeling_suite> rdf:type owl:Class ;
 										skos:prefLabel "ADF molecular modeling suite"@en ;
-                                                                                      rdfs:subClassOf <http://emmo.info/emmo/application/software#Electronic_software> .
+                                                                                      rdfs:subClassOf <http://emmo.info/emmo/domain/software#Electronic_software> .
 
 
-###  http://emmo.info/emmo/application/software#AMPAC
-<http://emmo.info/emmo/application/software#AMPAC> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#AMPAC
+<http://emmo.info/emmo/domain/software#AMPAC> rdf:type owl:Class ;
 										skos:prefLabel "AMPAC"@en ;
-                                                               rdfs:subClassOf <http://emmo.info/emmo/application/software#Electronic_software> .
+                                                               rdfs:subClassOf <http://emmo.info/emmo/domain/software#Electronic_software> .
 
 
-###  http://emmo.info/emmo/application/software#Abinit
-<http://emmo.info/emmo/application/software#Abinit> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Abinit
+<http://emmo.info/emmo/domain/software#Abinit> rdf:type owl:Class ;
 										skos:prefLabel "Abinit"@en ;
-                                                                rdfs:subClassOf <http://emmo.info/emmo/application/software#Electronic_software> .
+                                                                rdfs:subClassOf <http://emmo.info/emmo/domain/software#Electronic_software> .
 
 
-###  http://emmo.info/emmo/application/software#CASTEP
-<http://emmo.info/emmo/application/software#CASTEP> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#CASTEP
+<http://emmo.info/emmo/domain/software#CASTEP> rdf:type owl:Class ;
 										skos:prefLabel "CASTEP"@en ;
-                                                                rdfs:subClassOf <http://emmo.info/emmo/application/software#Electronic_software> .
+                                                                rdfs:subClassOf <http://emmo.info/emmo/domain/software#Electronic_software> .
 
 
-###  http://emmo.info/emmo/application/software#CP2K
-<http://emmo.info/emmo/application/software#CP2K> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#CP2K
+<http://emmo.info/emmo/domain/software#CP2K> rdf:type owl:Class ;
 										skos:prefLabel "CP2K"@en ;
-                                                              rdfs:subClassOf <http://emmo.info/emmo/application/software#Electronic_software> .
+                                                              rdfs:subClassOf <http://emmo.info/emmo/domain/software#Electronic_software> .
 
 
-###  http://emmo.info/emmo/application/software#CPMD
-<http://emmo.info/emmo/application/software#CPMD> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#CPMD
+<http://emmo.info/emmo/domain/software#CPMD> rdf:type owl:Class ;
 										skos:prefLabel "CPMD"@en ;
-                                                              rdfs:subClassOf <http://emmo.info/emmo/application/software#Electronic_software> .
+                                                              rdfs:subClassOf <http://emmo.info/emmo/domain/software#Electronic_software> .
 
 
-###  http://emmo.info/emmo/application/software#Crystal
-<http://emmo.info/emmo/application/software#Crystal> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Crystal
+<http://emmo.info/emmo/domain/software#Crystal> rdf:type owl:Class ;
 										skos:prefLabel "Crystal"@en ;
-                                                                 rdfs:subClassOf <http://emmo.info/emmo/application/software#Electronic_software> .
+                                                                 rdfs:subClassOf <http://emmo.info/emmo/domain/software#Electronic_software> .
 
 
-###  http://emmo.info/emmo/application/software#DACAPO
-<http://emmo.info/emmo/application/software#DACAPO> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#DACAPO
+<http://emmo.info/emmo/domain/software#DACAPO> rdf:type owl:Class ;
 										skos:prefLabel "DACAPO"@en ;
-                                                                rdfs:subClassOf <http://emmo.info/emmo/application/software#Electronic_software> .
+                                                                rdfs:subClassOf <http://emmo.info/emmo/domain/software#Electronic_software> .
 
 
-###  http://emmo.info/emmo/application/software#Dalton
-<http://emmo.info/emmo/application/software#Dalton> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Dalton
+<http://emmo.info/emmo/domain/software#Dalton> rdf:type owl:Class ;
 										skos:prefLabel "Dalton"@en ;
-                                                                rdfs:subClassOf <http://emmo.info/emmo/application/software#Electronic_software> .
+                                                                rdfs:subClassOf <http://emmo.info/emmo/domain/software#Electronic_software> .
 
 
-###  http://emmo.info/emmo/application/software#Demon2k
-<http://emmo.info/emmo/application/software#Demon2k> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Demon2k
+<http://emmo.info/emmo/domain/software#Demon2k> rdf:type owl:Class ;
 										skos:prefLabel "Demon2k"@en ;
-                                                                 rdfs:subClassOf <http://emmo.info/emmo/application/software#Electronic_software> .
+                                                                 rdfs:subClassOf <http://emmo.info/emmo/domain/software#Electronic_software> .
 
 
-###  http://emmo.info/emmo/application/software#ELK
-<http://emmo.info/emmo/application/software#ELK> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#ELK
+<http://emmo.info/emmo/domain/software#ELK> rdf:type owl:Class ;
 										skos:prefLabel "ELK"@en ;
-                                                             rdfs:subClassOf <http://emmo.info/emmo/application/software#Electronic_software> .
+                                                             rdfs:subClassOf <http://emmo.info/emmo/domain/software#Electronic_software> .
 
 
-###  http://emmo.info/emmo/application/software#Electronic_software
-<http://emmo.info/emmo/application/software#Electronic_software> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Electronic_software
+<http://emmo.info/emmo/domain/software#Electronic_software> rdf:type owl:Class ;
 										skos:prefLabel "Electronic software"@en ;
-                                                                             rdfs:subClassOf <http://emmo.info/emmo/application/software#Modelling_software> .
+                                                                             rdfs:subClassOf <http://emmo.info/emmo/domain/software#Modelling_software> .
 
 
-###  http://emmo.info/emmo/application/software#FLAPW-Fleur
-<http://emmo.info/emmo/application/software#FLAPW-Fleur> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#FLAPW-Fleur
+<http://emmo.info/emmo/domain/software#FLAPW-Fleur> rdf:type owl:Class ;
 										skos:prefLabel "FLAPW-Fleur"@en ;
-                                                                     rdfs:subClassOf <http://emmo.info/emmo/application/software#Electronic_software> .
+                                                                     rdfs:subClassOf <http://emmo.info/emmo/domain/software#Electronic_software> .
 
 
-###  http://emmo.info/emmo/application/software#Gaussian
-<http://emmo.info/emmo/application/software#Gaussian> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Gaussian
+<http://emmo.info/emmo/domain/software#Gaussian> rdf:type owl:Class ;
 										skos:prefLabel "Gaussian"@en ;
-                                                                  rdfs:subClassOf <http://emmo.info/emmo/application/software#Electronic_software> .
+                                                                  rdfs:subClassOf <http://emmo.info/emmo/domain/software#Electronic_software> .
 
 
-###  http://emmo.info/emmo/application/software#Material_Design_Medea
-<http://emmo.info/emmo/application/software#Material_Design_Medea> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Material_Design_Medea
+<http://emmo.info/emmo/domain/software#Material_Design_Medea> rdf:type owl:Class ;
 										skos:prefLabel "Material Design Medea"@en ;
-                                                                               rdfs:subClassOf <http://emmo.info/emmo/application/software#Electronic_software> .
+                                                                               rdfs:subClassOf <http://emmo.info/emmo/domain/software#Electronic_software> .
 
 
-###  http://emmo.info/emmo/application/software#Material_Studio_Accelrys
-<http://emmo.info/emmo/application/software#Material_Studio_Accelrys> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Material_Studio_Accelrys
+<http://emmo.info/emmo/domain/software#Material_Studio_Accelrys> rdf:type owl:Class ;
 										skos:prefLabel "Material Studio Accelrys"@en ;
-                                                                                  rdfs:subClassOf <http://emmo.info/emmo/application/software#Electronic_software> .
+                                                                                  rdfs:subClassOf <http://emmo.info/emmo/domain/software#Electronic_software> .
 
 
-###  http://emmo.info/emmo/application/software#QLDFT
-<http://emmo.info/emmo/application/software#QLDFT> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#QLDFT
+<http://emmo.info/emmo/domain/software#QLDFT> rdf:type owl:Class ;
 										skos:prefLabel "QLDFT"@en ;
-                                                               rdfs:subClassOf <http://emmo.info/emmo/application/software#Electronic_software> .
+                                                               rdfs:subClassOf <http://emmo.info/emmo/domain/software#Electronic_software> .
 
 
-###  http://emmo.info/emmo/application/software#QuantumEspresso
-<http://emmo.info/emmo/application/software#QuantumEspresso> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#QuantumEspresso
+<http://emmo.info/emmo/domain/software#QuantumEspresso> rdf:type owl:Class ;
 										skos:prefLabel "QuantumEspresso"@en ;
-                                                                         rdfs:subClassOf <http://emmo.info/emmo/application/software#Electronic_software> .
+                                                                         rdfs:subClassOf <http://emmo.info/emmo/domain/software#Electronic_software> .
 
 
-###  http://emmo.info/emmo/application/software#QuantumWise
-<http://emmo.info/emmo/application/software#QuantumWise> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#QuantumWise
+<http://emmo.info/emmo/domain/software#QuantumWise> rdf:type owl:Class ;
 										skos:prefLabel "QuantumWise"@en ;
-                                                                     rdfs:subClassOf <http://emmo.info/emmo/application/software#Electronic_software> .
+                                                                     rdfs:subClassOf <http://emmo.info/emmo/domain/software#Electronic_software> .
 
 
-###  http://emmo.info/emmo/application/software#SIESTA
-<http://emmo.info/emmo/application/software#SIESTA> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#SIESTA
+<http://emmo.info/emmo/domain/software#SIESTA> rdf:type owl:Class ;
 										skos:prefLabel "SIESTA"@en ;
-                                                                rdfs:subClassOf <http://emmo.info/emmo/application/software#Electronic_software> .
+                                                                rdfs:subClassOf <http://emmo.info/emmo/domain/software#Electronic_software> .
 
 
-###  http://emmo.info/emmo/application/software#Schrodinger
-<http://emmo.info/emmo/application/software#Schrodinger> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Schrodinger
+<http://emmo.info/emmo/domain/software#Schrodinger> rdf:type owl:Class ;
 										skos:prefLabel "Schrodinger"@en ;
-                                                                     rdfs:subClassOf <http://emmo.info/emmo/application/software#Electronic_software> .
+                                                                     rdfs:subClassOf <http://emmo.info/emmo/domain/software#Electronic_software> .
 
 
-###  http://emmo.info/emmo/application/software#TURBOMOLE
-<http://emmo.info/emmo/application/software#TURBOMOLE> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#TURBOMOLE
+<http://emmo.info/emmo/domain/software#TURBOMOLE> rdf:type owl:Class ;
 										skos:prefLabel "TURBOMOLE"@en ;
-                                                                   rdfs:subClassOf <http://emmo.info/emmo/application/software#Electronic_software> .
+                                                                   rdfs:subClassOf <http://emmo.info/emmo/domain/software#Electronic_software> .
 
 
-###  http://emmo.info/emmo/application/software#VASP
-<http://emmo.info/emmo/application/software#VASP> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#VASP
+<http://emmo.info/emmo/domain/software#VASP> rdf:type owl:Class ;
 										skos:prefLabel "VASP"@en ;
-                                                              rdfs:subClassOf <http://emmo.info/emmo/application/software#Electronic_software> .
+                                                              rdfs:subClassOf <http://emmo.info/emmo/domain/software#Electronic_software> .
 
 
-###  http://emmo.info/emmo/application/software#Wien2K
-<http://emmo.info/emmo/application/software#Wien2K> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Wien2K
+<http://emmo.info/emmo/domain/software#Wien2K> rdf:type owl:Class ;
 										skos:prefLabel "Wien2K"@en ;
-                                                                rdfs:subClassOf <http://emmo.info/emmo/application/software#Electronic_software> .
+                                                                rdfs:subClassOf <http://emmo.info/emmo/domain/software#Electronic_software> .
 
 
-###  http://emmo.info/emmo/application/software#Abaqus
-<http://emmo.info/emmo/application/software#Abaqus> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Abaqus
+<http://emmo.info/emmo/domain/software#Abaqus> rdf:type owl:Class ;
 										skos:prefLabel "Abaqus"@en ;
-                                        rdfs:subClassOf <http://emmo.info/emmo/application/software#Forming_Process_software> .
+                                        rdfs:subClassOf <http://emmo.info/emmo/domain/software#Forming_Process_software> .
 
 
-###  http://emmo.info/emmo/application/software#Algor
-<http://emmo.info/emmo/application/software#Algor> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Algor
+<http://emmo.info/emmo/domain/software#Algor> rdf:type owl:Class ;
 										skos:prefLabel "Algor"@en ;
-                                       rdfs:subClassOf <http://emmo.info/emmo/application/software#Forming_Process_software> .
+                                       rdfs:subClassOf <http://emmo.info/emmo/domain/software#Forming_Process_software> .
 
 
-###  http://emmo.info/emmo/application/software#COPRA
-<http://emmo.info/emmo/application/software#COPRA> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#COPRA
+<http://emmo.info/emmo/domain/software#COPRA> rdf:type owl:Class ;
 										skos:prefLabel "COPRA"@en ;
-                                       rdfs:subClassOf <http://emmo.info/emmo/application/software#Forming_Process_software> .
+                                       rdfs:subClassOf <http://emmo.info/emmo/domain/software#Forming_Process_software> .
 
 
-###  http://emmo.info/emmo/application/software#Catia
-<http://emmo.info/emmo/application/software#Catia> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Catia
+<http://emmo.info/emmo/domain/software#Catia> rdf:type owl:Class ;
 										skos:prefLabel "Catia"@en ;
-                                       rdfs:subClassOf <http://emmo.info/emmo/application/software#Forming_Process_software> .
+                                       rdfs:subClassOf <http://emmo.info/emmo/domain/software#Forming_Process_software> .
 
 
-###  http://emmo.info/emmo/application/software#Deform
-<http://emmo.info/emmo/application/software#Deform> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Deform
+<http://emmo.info/emmo/domain/software#Deform> rdf:type owl:Class ;
 										skos:prefLabel "Deform"@en ;
-                                        rdfs:subClassOf <http://emmo.info/emmo/application/software#Forming_Process_software> .
+                                        rdfs:subClassOf <http://emmo.info/emmo/domain/software#Forming_Process_software> .
 
 
-###  http://emmo.info/emmo/application/software#Forge3D
-<http://emmo.info/emmo/application/software#Forge3D> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Forge3D
+<http://emmo.info/emmo/domain/software#Forge3D> rdf:type owl:Class ;
 										skos:prefLabel "Forge3D"@en ;
-                                         rdfs:subClassOf <http://emmo.info/emmo/application/software#Forming_Process_software> .
+                                         rdfs:subClassOf <http://emmo.info/emmo/domain/software#Forming_Process_software> .
 
 
-###  http://emmo.info/emmo/application/software#Forming_Process_software
-<http://emmo.info/emmo/application/software#Forming_Process_software> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Forming_Process_software
+<http://emmo.info/emmo/domain/software#Forming_Process_software> rdf:type owl:Class ;
 										skos:prefLabel "Forming Process software"@en ;
-                                                          rdfs:subClassOf <http://emmo.info/emmo/application/software#Continuum_software> .
+                                                          rdfs:subClassOf <http://emmo.info/emmo/domain/software#Continuum_software> .
 
 
-###  http://emmo.info/emmo/application/software#Helius
-<http://emmo.info/emmo/application/software#Helius> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Helius
+<http://emmo.info/emmo/domain/software#Helius> rdf:type owl:Class ;
 										skos:prefLabel "Helius"@en ;
-                                        rdfs:subClassOf <http://emmo.info/emmo/application/software#Forming_Process_software> .
+                                        rdfs:subClassOf <http://emmo.info/emmo/domain/software#Forming_Process_software> .
 
 
-###  http://emmo.info/emmo/application/software#LSDyna
-<http://emmo.info/emmo/application/software#LSDyna> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#LSDyna
+<http://emmo.info/emmo/domain/software#LSDyna> rdf:type owl:Class ;
 										skos:prefLabel "LSDyna"@en ;
-                                        rdfs:subClassOf <http://emmo.info/emmo/application/software#Forming_Process_software> .
+                                        rdfs:subClassOf <http://emmo.info/emmo/domain/software#Forming_Process_software> .
 
 
-###  http://emmo.info/emmo/application/software#Lagamine
-<http://emmo.info/emmo/application/software#Lagamine> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Lagamine
+<http://emmo.info/emmo/domain/software#Lagamine> rdf:type owl:Class ;
 										skos:prefLabel "Lagamine"@en ;
-                                          rdfs:subClassOf <http://emmo.info/emmo/application/software#Forming_Process_software> .
+                                          rdfs:subClassOf <http://emmo.info/emmo/domain/software#Forming_Process_software> .
 
 
-###  http://emmo.info/emmo/application/software#Larstran
-<http://emmo.info/emmo/application/software#Larstran> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Larstran
+<http://emmo.info/emmo/domain/software#Larstran> rdf:type owl:Class ;
 										skos:prefLabel "Larstran"@en ;
-                                          rdfs:subClassOf <http://emmo.info/emmo/application/software#Forming_Process_software> .
+                                          rdfs:subClassOf <http://emmo.info/emmo/domain/software#Forming_Process_software> .
 
 
-###  http://emmo.info/emmo/application/software#MADYMO
-<http://emmo.info/emmo/application/software#MADYMO> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#MADYMO
+<http://emmo.info/emmo/domain/software#MADYMO> rdf:type owl:Class ;
 										skos:prefLabel "MADYMO"@en ;
-                                        rdfs:subClassOf <http://emmo.info/emmo/application/software#Forming_Process_software> .
+                                        rdfs:subClassOf <http://emmo.info/emmo/domain/software#Forming_Process_software> .
 
 
-###  http://emmo.info/emmo/application/software#MSC_Nastran
-<http://emmo.info/emmo/application/software#MSC_Nastran> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#MSC_Nastran
+<http://emmo.info/emmo/domain/software#MSC_Nastran> rdf:type owl:Class ;
 										skos:prefLabel "MSC Nastran"@en ;
-                                             rdfs:subClassOf <http://emmo.info/emmo/application/software#Forming_Process_software> .
+                                             rdfs:subClassOf <http://emmo.info/emmo/domain/software#Forming_Process_software> .
 
 
-###  http://emmo.info/emmo/application/software#Metafor
-<http://emmo.info/emmo/application/software#Metafor> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Metafor
+<http://emmo.info/emmo/domain/software#Metafor> rdf:type owl:Class ;
 										skos:prefLabel "Metafor"@en ;
-                                         rdfs:subClassOf <http://emmo.info/emmo/application/software#Forming_Process_software> .
+                                         rdfs:subClassOf <http://emmo.info/emmo/domain/software#Forming_Process_software> .
 
 
-###  http://emmo.info/emmo/application/software#Morfeo
-<http://emmo.info/emmo/application/software#Morfeo> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Morfeo
+<http://emmo.info/emmo/domain/software#Morfeo> rdf:type owl:Class ;
 										skos:prefLabel "Morfeo"@en ;
-                                        rdfs:subClassOf <http://emmo.info/emmo/application/software#Forming_Process_software> .
+                                        rdfs:subClassOf <http://emmo.info/emmo/domain/software#Forming_Process_software> .
 
 
-###  http://emmo.info/emmo/application/software#PAM-Crash
-<http://emmo.info/emmo/application/software#PAM-Crash> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#PAM-Crash
+<http://emmo.info/emmo/domain/software#PAM-Crash> rdf:type owl:Class ;
 										skos:prefLabel "PAM-Crash"@en ;
-                                           rdfs:subClassOf <http://emmo.info/emmo/application/software#Forming_Process_software> .
+                                           rdfs:subClassOf <http://emmo.info/emmo/domain/software#Forming_Process_software> .
 
 
-###  http://emmo.info/emmo/application/software#QuickField
-<http://emmo.info/emmo/application/software#QuickField> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#QuickField
+<http://emmo.info/emmo/domain/software#QuickField> rdf:type owl:Class ;
 										skos:prefLabel "QuickField"@en ;
-                                            rdfs:subClassOf <http://emmo.info/emmo/application/software#Forming_Process_software> .
+                                            rdfs:subClassOf <http://emmo.info/emmo/domain/software#Forming_Process_software> .
 
 
-###  http://emmo.info/emmo/application/software#SimLAM
-<http://emmo.info/emmo/application/software#SimLAM> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#SimLAM
+<http://emmo.info/emmo/domain/software#SimLAM> rdf:type owl:Class ;
 										skos:prefLabel "SimLAM"@en ;
-                                        rdfs:subClassOf <http://emmo.info/emmo/application/software#Forming_Process_software> .
+                                        rdfs:subClassOf <http://emmo.info/emmo/domain/software#Forming_Process_software> .
 
 
-###  http://emmo.info/emmo/application/software#ZENCRACK
-<http://emmo.info/emmo/application/software#ZENCRACK> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#ZENCRACK
+<http://emmo.info/emmo/domain/software#ZENCRACK> rdf:type owl:Class ;
 										skos:prefLabel "ZENCRACK"@en ;
-                                          rdfs:subClassOf <http://emmo.info/emmo/application/software#Forming_Process_software> .
+                                          rdfs:subClassOf <http://emmo.info/emmo/domain/software#Forming_Process_software> .
 
 
-###  http://emmo.info/emmo/application/software#simufact.forming
-<http://emmo.info/emmo/application/software#simufact.forming> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#simufact.forming
+<http://emmo.info/emmo/domain/software#simufact.forming> rdf:type owl:Class ;
 										skos:prefLabel "simufact.forming"@en ;
-                                                  rdfs:subClassOf <http://emmo.info/emmo/application/software#Forming_Process_software> .
+                                                  rdfs:subClassOf <http://emmo.info/emmo/domain/software#Forming_Process_software> .
 
 
-###  http://emmo.info/emmo/application/software#Joining_Process_software
-<http://emmo.info/emmo/application/software#Joining_Process_software> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Joining_Process_software
+<http://emmo.info/emmo/domain/software#Joining_Process_software> rdf:type owl:Class ;
 										skos:prefLabel "Joining Process software"@en ;
-                                                          rdfs:subClassOf <http://emmo.info/emmo/application/software#Continuum_software> .
+                                                          rdfs:subClassOf <http://emmo.info/emmo/domain/software#Continuum_software> .
 
 
-###  http://emmo.info/emmo/application/software#LaserWeld3D
-<http://emmo.info/emmo/application/software#LaserWeld3D> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#LaserWeld3D
+<http://emmo.info/emmo/domain/software#LaserWeld3D> rdf:type owl:Class ;
 										skos:prefLabel "LaserWeld3D"@en ;
-                                             rdfs:subClassOf <http://emmo.info/emmo/application/software#Joining_Process_software> .
+                                             rdfs:subClassOf <http://emmo.info/emmo/domain/software#Joining_Process_software> .
 
 
-###  http://emmo.info/emmo/application/software#Simweld
-<http://emmo.info/emmo/application/software#Simweld> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Simweld
+<http://emmo.info/emmo/domain/software#Simweld> rdf:type owl:Class ;
 										skos:prefLabel "Simweld"@en ;
-                                         rdfs:subClassOf <http://emmo.info/emmo/application/software#Joining_Process_software> .
+                                         rdfs:subClassOf <http://emmo.info/emmo/domain/software#Joining_Process_software> .
 
 
-###  http://emmo.info/emmo/application/software#Sorpas
-<http://emmo.info/emmo/application/software#Sorpas> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Sorpas
+<http://emmo.info/emmo/domain/software#Sorpas> rdf:type owl:Class ;
 										skos:prefLabel "Sorpas"@en ;
-                                        rdfs:subClassOf <http://emmo.info/emmo/application/software#Joining_Process_software> .
+                                        rdfs:subClassOf <http://emmo.info/emmo/domain/software#Joining_Process_software> .
 
 
-###  http://emmo.info/emmo/application/software#Sysweld
-<http://emmo.info/emmo/application/software#Sysweld> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Sysweld
+<http://emmo.info/emmo/domain/software#Sysweld> rdf:type owl:Class ;
 										skos:prefLabel "Sysweld"@en ;
-                                         rdfs:subClassOf <http://emmo.info/emmo/application/software#Joining_Process_software> .
+                                         rdfs:subClassOf <http://emmo.info/emmo/domain/software#Joining_Process_software> .
 
 
-###  http://emmo.info/emmo/application/software#VirFac_welding
-<http://emmo.info/emmo/application/software#VirFac_welding> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#VirFac_welding
+<http://emmo.info/emmo/domain/software#VirFac_welding> rdf:type owl:Class ;
 										skos:prefLabel "VirFac welding"@en ;
-                                                rdfs:subClassOf <http://emmo.info/emmo/application/software#Joining_Process_software> .
+                                                rdfs:subClassOf <http://emmo.info/emmo/domain/software#Joining_Process_software> .
 
 
-###  http://emmo.info/emmo/application/software#Weldware
-<http://emmo.info/emmo/application/software#Weldware> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Weldware
+<http://emmo.info/emmo/domain/software#Weldware> rdf:type owl:Class ;
 										skos:prefLabel "Weldware"@en ;
-                                          rdfs:subClassOf <http://emmo.info/emmo/application/software#Joining_Process_software> .
+                                          rdfs:subClassOf <http://emmo.info/emmo/domain/software#Joining_Process_software> .
 
 
-###  http://emmo.info/emmo/application/software#simufact.welding
-<http://emmo.info/emmo/application/software#simufact.welding> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#simufact.welding
+<http://emmo.info/emmo/domain/software#simufact.welding> rdf:type owl:Class ;
 										skos:prefLabel "simufact.welding"@en ;
-                                                  rdfs:subClassOf <http://emmo.info/emmo/application/software#Joining_Process_software> .
+                                                  rdfs:subClassOf <http://emmo.info/emmo/domain/software#Joining_Process_software> .
 
 
-###  http://emmo.info/emmo/application/software#ADINA
-<http://emmo.info/emmo/application/software#ADINA> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#ADINA
+<http://emmo.info/emmo/domain/software#ADINA> rdf:type owl:Class ;
 										skos:prefLabel "ADINA"@en ;
-                               rdfs:subClassOf <http://emmo.info/emmo/application/software#Meshing> .
+                               rdfs:subClassOf <http://emmo.info/emmo/domain/software#Meshing> .
 
 
-###  http://emmo.info/emmo/application/software#Diffpack
-<http://emmo.info/emmo/application/software#Diffpack> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Diffpack
+<http://emmo.info/emmo/domain/software#Diffpack> rdf:type owl:Class ;
 										skos:prefLabel "Diffpack"@en ;
-                                  rdfs:subClassOf <http://emmo.info/emmo/application/software#Meshing> .
+                                  rdfs:subClassOf <http://emmo.info/emmo/domain/software#Meshing> .
 
 
-###  http://emmo.info/emmo/application/software#FEDEM
-<http://emmo.info/emmo/application/software#FEDEM> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#FEDEM
+<http://emmo.info/emmo/domain/software#FEDEM> rdf:type owl:Class ;
 										skos:prefLabel "FEDEM"@en ;
-                               rdfs:subClassOf <http://emmo.info/emmo/application/software#Meshing> .
+                               rdfs:subClassOf <http://emmo.info/emmo/domain/software#Meshing> .
 
 
-###  http://emmo.info/emmo/application/software#GiD
-<http://emmo.info/emmo/application/software#GiD> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#GiD
+<http://emmo.info/emmo/domain/software#GiD> rdf:type owl:Class ;
 										skos:prefLabel "GiD"@en ;
-                             rdfs:subClassOf <http://emmo.info/emmo/application/software#Meshing> .
+                             rdfs:subClassOf <http://emmo.info/emmo/domain/software#Meshing> .
 
 
-###  http://emmo.info/emmo/application/software#Hypermesh
-<http://emmo.info/emmo/application/software#Hypermesh> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Hypermesh
+<http://emmo.info/emmo/domain/software#Hypermesh> rdf:type owl:Class ;
 										skos:prefLabel "Hypermesh"@en ;
-                                   rdfs:subClassOf <http://emmo.info/emmo/application/software#Meshing> .
+                                   rdfs:subClassOf <http://emmo.info/emmo/domain/software#Meshing> .
 
 
-###  http://emmo.info/emmo/application/software#IDEAS
-<http://emmo.info/emmo/application/software#IDEAS> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#IDEAS
+<http://emmo.info/emmo/domain/software#IDEAS> rdf:type owl:Class ;
 										skos:prefLabel "IDEAS"@en ;
-                               rdfs:subClassOf <http://emmo.info/emmo/application/software#Meshing> .
+                               rdfs:subClassOf <http://emmo.info/emmo/domain/software#Meshing> .
 
 
-###  http://emmo.info/emmo/application/software#Meshing
-<http://emmo.info/emmo/application/software#Meshing> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Meshing
+<http://emmo.info/emmo/domain/software#Meshing> rdf:type owl:Class ;
 										skos:prefLabel "Meshing"@en ;
-                                 rdfs:subClassOf <http://emmo.info/emmo/application/software#Pre-processing_software> .
+                                 rdfs:subClassOf <http://emmo.info/emmo/domain/software#Pre-processing_software> .
 
 
-###  http://emmo.info/emmo/application/software#PATRAN
-<http://emmo.info/emmo/application/software#PATRAN> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#PATRAN
+<http://emmo.info/emmo/domain/software#PATRAN> rdf:type owl:Class ;
 										skos:prefLabel "PATRAN"@en ;
-                                rdfs:subClassOf <http://emmo.info/emmo/application/software#Meshing> .
+                                rdfs:subClassOf <http://emmo.info/emmo/domain/software#Meshing> .
 
 
-###  http://emmo.info/emmo/application/software#VGStudio
-<http://emmo.info/emmo/application/software#VGStudio> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#VGStudio
+<http://emmo.info/emmo/domain/software#VGStudio> rdf:type owl:Class ;
 										skos:prefLabel "VGStudio"@en ;
-                                  rdfs:subClassOf <http://emmo.info/emmo/application/software#Meshing> .
+                                  rdfs:subClassOf <http://emmo.info/emmo/domain/software#Meshing> .
 
 
-###  http://emmo.info/emmo/application/software#CAFE
-<http://emmo.info/emmo/application/software#CAFE> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#CAFE
+<http://emmo.info/emmo/domain/software#CAFE> rdf:type owl:Class ;
 										skos:prefLabel "CAFE"@en ;
-                                                rdfs:subClassOf <http://emmo.info/emmo/application/software#Microstructure_software> .
+                                                rdfs:subClassOf <http://emmo.info/emmo/domain/software#Microstructure_software> .
 
 
-###  http://emmo.info/emmo/application/software#Clang
-<http://emmo.info/emmo/application/software#Clang> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Clang
+<http://emmo.info/emmo/domain/software#Clang> rdf:type owl:Class ;
 										skos:prefLabel "Clang"@en ;
-                                                 rdfs:subClassOf <http://emmo.info/emmo/application/software#Microstructure_software> .
+                                                 rdfs:subClassOf <http://emmo.info/emmo/domain/software#Microstructure_software> .
 
 
-###  http://emmo.info/emmo/application/software#DAMASK
-<http://emmo.info/emmo/application/software#DAMASK> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#DAMASK
+<http://emmo.info/emmo/domain/software#DAMASK> rdf:type owl:Class ;
 										skos:prefLabel "DAMASK"@en ;
-                                                  rdfs:subClassOf <http://emmo.info/emmo/application/software#Microstructure_software> .
+                                                  rdfs:subClassOf <http://emmo.info/emmo/domain/software#Microstructure_software> .
 
 
-###  http://emmo.info/emmo/application/software#DICTRA
-<http://emmo.info/emmo/application/software#DICTRA> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#DICTRA
+<http://emmo.info/emmo/domain/software#DICTRA> rdf:type owl:Class ;
 										skos:prefLabel "DICTRA"@en ;
-                                                  rdfs:subClassOf <http://emmo.info/emmo/application/software#Microstructure_software> .
+                                                  rdfs:subClassOf <http://emmo.info/emmo/domain/software#Microstructure_software> .
 
 
-###  http://emmo.info/emmo/application/software#FiPy
-<http://emmo.info/emmo/application/software#FiPy> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#FiPy
+<http://emmo.info/emmo/domain/software#FiPy> rdf:type owl:Class ;
 										skos:prefLabel "FiPy"@en ;
-                                                rdfs:subClassOf <http://emmo.info/emmo/application/software#Microstructure_software> .
+                                                rdfs:subClassOf <http://emmo.info/emmo/domain/software#Microstructure_software> .
 
 
-###  http://emmo.info/emmo/application/software#GeoDict
-<http://emmo.info/emmo/application/software#GeoDict> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#GeoDict
+<http://emmo.info/emmo/domain/software#GeoDict> rdf:type owl:Class ;
 										skos:prefLabel "GeoDict"@en ;
-                                                   rdfs:subClassOf <http://emmo.info/emmo/application/software#Microstructure_software> .
+                                                   rdfs:subClassOf <http://emmo.info/emmo/domain/software#Microstructure_software> .
 
 
-###  http://emmo.info/emmo/application/software#MICRESS
-<http://emmo.info/emmo/application/software#MICRESS> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#MICRESS
+<http://emmo.info/emmo/domain/software#MICRESS> rdf:type owl:Class ;
 										skos:prefLabel "MICRESS"@en ;
-                                                   rdfs:subClassOf <http://emmo.info/emmo/application/software#Microstructure_software> .
+                                                   rdfs:subClassOf <http://emmo.info/emmo/domain/software#Microstructure_software> .
 
 
-###  http://emmo.info/emmo/application/software#MICROphase
-<http://emmo.info/emmo/application/software#MICROphase> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#MICROphase
+<http://emmo.info/emmo/domain/software#MICROphase> rdf:type owl:Class ;
 										skos:prefLabel "MICROphase"@en ;
-                                                      rdfs:subClassOf <http://emmo.info/emmo/application/software#Microstructure_software> .
+                                                      rdfs:subClassOf <http://emmo.info/emmo/domain/software#Microstructure_software> .
 
 
-###  http://emmo.info/emmo/application/software#MMSP
-<http://emmo.info/emmo/application/software#MMSP> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#MMSP
+<http://emmo.info/emmo/domain/software#MMSP> rdf:type owl:Class ;
 										skos:prefLabel "MMSP"@en ;
-                                                rdfs:subClassOf <http://emmo.info/emmo/application/software#Microstructure_software> .
+                                                rdfs:subClassOf <http://emmo.info/emmo/domain/software#Microstructure_software> .
 
 
-###  http://emmo.info/emmo/application/software#Materials_Studio_Accelrys
-<http://emmo.info/emmo/application/software#Materials_Studio_Accelrys> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Materials_Studio_Accelrys
+<http://emmo.info/emmo/domain/software#Materials_Studio_Accelrys> rdf:type owl:Class ;
 										skos:prefLabel "Materials Studio Accelrys"@en ;
-                                                                     rdfs:subClassOf <http://emmo.info/emmo/application/software#Microstructure_software> .
+                                                                     rdfs:subClassOf <http://emmo.info/emmo/domain/software#Microstructure_software> .
 
 
-###  http://emmo.info/emmo/application/software#Meses
-<http://emmo.info/emmo/application/software#Meses> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Meses
+<http://emmo.info/emmo/domain/software#Meses> rdf:type owl:Class ;
 										skos:prefLabel "Meses"@en ;
-                                                 rdfs:subClassOf <http://emmo.info/emmo/application/software#Microstructure_software> .
+                                                 rdfs:subClassOf <http://emmo.info/emmo/domain/software#Microstructure_software> .
 
 
-###  http://emmo.info/emmo/application/software#Microstructure_software
-<http://emmo.info/emmo/application/software#Microstructure_software> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Microstructure_software
+<http://emmo.info/emmo/domain/software#Microstructure_software> rdf:type owl:Class ;
 										skos:prefLabel "Microstructure software"@en ;
-                                                                   rdfs:subClassOf <http://emmo.info/emmo/application/software#Continuum_software> .
+                                                                   rdfs:subClassOf <http://emmo.info/emmo/domain/software#Continuum_software> .
 
 
-###  http://emmo.info/emmo/application/software#OOF
-<http://emmo.info/emmo/application/software#OOF> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#OOF
+<http://emmo.info/emmo/domain/software#OOF> rdf:type owl:Class ;
 										skos:prefLabel "OOF"@en ;
-                                               rdfs:subClassOf <http://emmo.info/emmo/application/software#Microstructure_software> .
+                                               rdfs:subClassOf <http://emmo.info/emmo/domain/software#Microstructure_software> .
 
 
-###  http://emmo.info/emmo/application/software#OpenPhase
-<http://emmo.info/emmo/application/software#OpenPhase> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#OpenPhase
+<http://emmo.info/emmo/domain/software#OpenPhase> rdf:type owl:Class ;
 										skos:prefLabel "OpenPhase"@en ;
-                                                     rdfs:subClassOf <http://emmo.info/emmo/application/software#Microstructure_software> .
+                                                     rdfs:subClassOf <http://emmo.info/emmo/domain/software#Microstructure_software> .
 
 
-###  http://emmo.info/emmo/application/software#Pace3D
-<http://emmo.info/emmo/application/software#Pace3D> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Pace3D
+<http://emmo.info/emmo/domain/software#Pace3D> rdf:type owl:Class ;
 										skos:prefLabel "Pace3D"@en ;
-                                                  rdfs:subClassOf <http://emmo.info/emmo/application/software#Microstructure_software> .
+                                                  rdfs:subClassOf <http://emmo.info/emmo/domain/software#Microstructure_software> .
 
 
-###  http://emmo.info/emmo/application/software#Sphaeroism
-<http://emmo.info/emmo/application/software#Sphaeroism> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Sphaeroism
+<http://emmo.info/emmo/domain/software#Sphaeroism> rdf:type owl:Class ;
 										skos:prefLabel "Sphaeroism"@en ;
-                                                      rdfs:subClassOf <http://emmo.info/emmo/application/software#Microstructure_software> .
+                                                      rdfs:subClassOf <http://emmo.info/emmo/domain/software#Microstructure_software> .
 
 
-###  http://emmo.info/emmo/application/software#TC-Prisma
-<http://emmo.info/emmo/application/software#TC-Prisma> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#TC-Prisma
+<http://emmo.info/emmo/domain/software#TC-Prisma> rdf:type owl:Class ;
 										skos:prefLabel "TC-Prisma"@en ;
-                                                     rdfs:subClassOf <http://emmo.info/emmo/application/software#Microstructure_software> .
+                                                     rdfs:subClassOf <http://emmo.info/emmo/domain/software#Microstructure_software> .
 
 
-###  http://emmo.info/emmo/application/software#WiseTex
-<http://emmo.info/emmo/application/software#WiseTex> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#WiseTex
+<http://emmo.info/emmo/domain/software#WiseTex> rdf:type owl:Class ;
 										skos:prefLabel "WiseTex"@en ;
-                                                   rdfs:subClassOf <http://emmo.info/emmo/application/software#Microstructure_software> .
+                                                   rdfs:subClassOf <http://emmo.info/emmo/domain/software#Microstructure_software> .
 
 
-###  http://emmo.info/emmo/application/software#simpleware
-<http://emmo.info/emmo/application/software#simpleware> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#simpleware
+<http://emmo.info/emmo/domain/software#simpleware> rdf:type owl:Class ;
 										skos:prefLabel "simpleware"@en ;
-                                                      rdfs:subClassOf <http://emmo.info/emmo/application/software#Microstructure_software> .
+                                                      rdfs:subClassOf <http://emmo.info/emmo/domain/software#Microstructure_software> .
 
 
-###  http://emmo.info/emmo/application/software#ASE
-<http://emmo.info/emmo/application/software#ASE> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#ASE
+<http://emmo.info/emmo/domain/software#ASE> rdf:type owl:Class ;
 										skos:prefLabel "ASE"@en ;
-                                                               rdfs:subClassOf <http://emmo.info/emmo/application/software#Pre_Post-Processing_Atomistic> .
+                                                               rdfs:subClassOf <http://emmo.info/emmo/domain/software#Pre_Post-Processing_Atomistic> .
 
 
-###  http://emmo.info/emmo/application/software#AViz
-<http://emmo.info/emmo/application/software#AViz> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#AViz
+<http://emmo.info/emmo/domain/software#AViz> rdf:type owl:Class ;
 										skos:prefLabel "AViz"@en ;
-                                                                rdfs:subClassOf <http://emmo.info/emmo/application/software#Pre_Post-Processing_Atomistic> .
+                                                                rdfs:subClassOf <http://emmo.info/emmo/domain/software#Pre_Post-Processing_Atomistic> .
 
 
-###  http://emmo.info/emmo/application/software#AtomEye
-<http://emmo.info/emmo/application/software#AtomEye> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#AtomEye
+<http://emmo.info/emmo/domain/software#AtomEye> rdf:type owl:Class ;
 										skos:prefLabel "AtomEye"@en ;
-                                                                   rdfs:subClassOf <http://emmo.info/emmo/application/software#Pre_Post-Processing_Atomistic> .
+                                                                   rdfs:subClassOf <http://emmo.info/emmo/domain/software#Pre_Post-Processing_Atomistic> .
 
 
-###  http://emmo.info/emmo/application/software#Jmol
-<http://emmo.info/emmo/application/software#Jmol> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Jmol
+<http://emmo.info/emmo/domain/software#Jmol> rdf:type owl:Class ;
 										skos:prefLabel "Jmol"@en ;
-                                                                rdfs:subClassOf <http://emmo.info/emmo/application/software#Pre_Post-Processing_Atomistic> .
+                                                                rdfs:subClassOf <http://emmo.info/emmo/domain/software#Pre_Post-Processing_Atomistic> .
 
 
-###  http://emmo.info/emmo/application/software#OVITO
-<http://emmo.info/emmo/application/software#OVITO> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#OVITO
+<http://emmo.info/emmo/domain/software#OVITO> rdf:type owl:Class ;
 										skos:prefLabel "OVITO"@en ;
-                                                                 rdfs:subClassOf <http://emmo.info/emmo/application/software#Pre_Post-Processing_Atomistic> .
+                                                                 rdfs:subClassOf <http://emmo.info/emmo/domain/software#Pre_Post-Processing_Atomistic> .
 
 
-###  http://emmo.info/emmo/application/software#Paraview
-<http://emmo.info/emmo/application/software#Paraview> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Paraview
+<http://emmo.info/emmo/domain/software#Paraview> rdf:type owl:Class ;
 										skos:prefLabel "Paraview"@en ;
-                                                                    rdfs:subClassOf <http://emmo.info/emmo/application/software#Pre_Post-Processing_Atomistic> .
+                                                                    rdfs:subClassOf <http://emmo.info/emmo/domain/software#Pre_Post-Processing_Atomistic> .
 
 
-###  http://emmo.info/emmo/application/software#Pre_Post-Processing_Atomistic
-<http://emmo.info/emmo/application/software#Pre_Post-Processing_Atomistic> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Pre_Post-Processing_Atomistic
+<http://emmo.info/emmo/domain/software#Pre_Post-Processing_Atomistic> rdf:type owl:Class ;
 										skos:prefLabel "Pre Post-Processing Atomistic"@en ;
-                                                                                         rdfs:subClassOf <http://emmo.info/emmo/application/software#Atomistic_software> .
+                                                                                         rdfs:subClassOf <http://emmo.info/emmo/domain/software#Atomistic_software> .
 
 
-###  http://emmo.info/emmo/application/software#RasMol
-<http://emmo.info/emmo/application/software#RasMol> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#RasMol
+<http://emmo.info/emmo/domain/software#RasMol> rdf:type owl:Class ;
 										skos:prefLabel "RasMol"@en ;
-                                                                  rdfs:subClassOf <http://emmo.info/emmo/application/software#Pre_Post-Processing_Atomistic> .
+                                                                  rdfs:subClassOf <http://emmo.info/emmo/domain/software#Pre_Post-Processing_Atomistic> .
 
 
-###  http://emmo.info/emmo/application/software#VMD
-<http://emmo.info/emmo/application/software#VMD> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#VMD
+<http://emmo.info/emmo/domain/software#VMD> rdf:type owl:Class ;
 										skos:prefLabel "VMD"@en ;
-                                                               rdfs:subClassOf <http://emmo.info/emmo/application/software#Pre_Post-Processing_Atomistic> .
+                                                               rdfs:subClassOf <http://emmo.info/emmo/domain/software#Pre_Post-Processing_Atomistic> .
 
 
-###  http://emmo.info/emmo/application/software#XcrysDen
-<http://emmo.info/emmo/application/software#XcrysDen> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#XcrysDen
+<http://emmo.info/emmo/domain/software#XcrysDen> rdf:type owl:Class ;
 										skos:prefLabel "XcrysDen"@en ;
-                                                                    rdfs:subClassOf <http://emmo.info/emmo/application/software#Pre_Post-Processing_Atomistic> .
+                                                                    rdfs:subClassOf <http://emmo.info/emmo/domain/software#Pre_Post-Processing_Atomistic> .
 
 
-###  http://emmo.info/emmo/application/software#pizza.py
-<http://emmo.info/emmo/application/software#pizza.py> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#pizza.py
+<http://emmo.info/emmo/domain/software#pizza.py> rdf:type owl:Class ;
 										skos:prefLabel "pizza.py"@en ;
-                                                                    rdfs:subClassOf <http://emmo.info/emmo/application/software#Pre_Post-Processing_Atomistic> .
+                                                                    rdfs:subClassOf <http://emmo.info/emmo/domain/software#Pre_Post-Processing_Atomistic> .
 
 
-###  http://emmo.info/emmo/application/software#Coating_thick_software
-<http://emmo.info/emmo/application/software#Coating_thick_software> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Coating_thick_software
+<http://emmo.info/emmo/domain/software#Coating_thick_software> rdf:type owl:Class ;
 										skos:prefLabel "Coating thick software"@en ;
-                                                            rdfs:subClassOf <http://emmo.info/emmo/application/software#Continuum_software> .
+                                                            rdfs:subClassOf <http://emmo.info/emmo/domain/software#Continuum_software> .
 
 
-###  http://emmo.info/emmo/application/software#Coating_thin
-<http://emmo.info/emmo/application/software#Coating_thin> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Coating_thin
+<http://emmo.info/emmo/domain/software#Coating_thin> rdf:type owl:Class ;
 										skos:prefLabel "Coating thin"@en ;
-                                                  rdfs:subClassOf <http://emmo.info/emmo/application/software#Atomistic_software> .
+                                                  rdfs:subClassOf <http://emmo.info/emmo/domain/software#Atomistic_software> .
 
 
-###  http://emmo.info/emmo/application/software#Continuum_software
-<http://emmo.info/emmo/application/software#Continuum_software> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Continuum_software
+<http://emmo.info/emmo/domain/software#Continuum_software> rdf:type owl:Class ;
 										skos:prefLabel "Continuum software"@en ;
-                                                        rdfs:subClassOf <http://emmo.info/emmo/application/software#Modelling_software> .
+                                                        rdfs:subClassOf <http://emmo.info/emmo/domain/software#Modelling_software> .
 
 
-###  http://emmo.info/emmo/application/software#Corrosion_software
-<http://emmo.info/emmo/application/software#Corrosion_software> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Corrosion_software
+<http://emmo.info/emmo/domain/software#Corrosion_software> rdf:type owl:Class ;
 										skos:prefLabel "Corrosion software"@en ;
-                                                        rdfs:subClassOf <http://emmo.info/emmo/application/software#Continuum_software> .
+                                                        rdfs:subClassOf <http://emmo.info/emmo/domain/software#Continuum_software> .
 
 
-###  http://emmo.info/emmo/application/software#Database_software
-<http://emmo.info/emmo/application/software#Database_software> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Database_software
+<http://emmo.info/emmo/domain/software#Database_software> rdf:type owl:Class ;
 										skos:prefLabel "Database software"@en ;
-                                                       rdfs:subClassOf <http://emmo.info/emmo/application/software#Software> .
+                                                       rdfs:subClassOf <http://emmo.info/emmo/domain/software#Software> .
 
 
-###  http://emmo.info/emmo/application/software#Databases
-<http://emmo.info/emmo/application/software#Databases> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Databases
+<http://emmo.info/emmo/domain/software#Databases> rdf:type owl:Class ;
 										skos:prefLabel "Databases"@en ;
-                                               rdfs:subClassOf <http://emmo.info/emmo/application/software#Database_software> .
+                                               rdfs:subClassOf <http://emmo.info/emmo/domain/software#Database_software> .
 
 
-###  http://emmo.info/emmo/application/software#Linux
-<http://emmo.info/emmo/application/software#Linux> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Linux
+<http://emmo.info/emmo/domain/software#Linux> rdf:type owl:Class ;
 										skos:prefLabel "Linux"@en ;
-                                           rdfs:subClassOf <http://emmo.info/emmo/application/software#Operating_system> .
+                                           rdfs:subClassOf <http://emmo.info/emmo/domain/software#Operating_system> .
 
 
-###  http://emmo.info/emmo/application/software#Mac
-<http://emmo.info/emmo/application/software#Mac> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Mac
+<http://emmo.info/emmo/domain/software#Mac> rdf:type owl:Class ;
 										skos:prefLabel "Mac"@en ;
-                                         rdfs:subClassOf <http://emmo.info/emmo/application/software#Operating_system> .
+                                         rdfs:subClassOf <http://emmo.info/emmo/domain/software#Operating_system> .
 
 
-###  http://emmo.info/emmo/application/software#Machining_software
-<http://emmo.info/emmo/application/software#Machining_software> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Machining_software
+<http://emmo.info/emmo/domain/software#Machining_software> rdf:type owl:Class ;
 										skos:prefLabel "Machining software"@en ;
-                                                        rdfs:subClassOf <http://emmo.info/emmo/application/software#Continuum_software> .
+                                                        rdfs:subClassOf <http://emmo.info/emmo/domain/software#Continuum_software> .
 
 
-###  http://emmo.info/emmo/application/software#Mesoscopic_software
-<http://emmo.info/emmo/application/software#Mesoscopic_software> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Mesoscopic_software
+<http://emmo.info/emmo/domain/software#Mesoscopic_software> rdf:type owl:Class ;
 										skos:prefLabel "Mesoscopic software"@en ;
-                                                         rdfs:subClassOf <http://emmo.info/emmo/application/software#Modelling_software> .
+                                                         rdfs:subClassOf <http://emmo.info/emmo/domain/software#Modelling_software> .
 
 
-###  http://emmo.info/emmo/application/software#Modelling_software
-<http://emmo.info/emmo/application/software#Modelling_software> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Modelling_software
+<http://emmo.info/emmo/domain/software#Modelling_software> rdf:type owl:Class ;
 										skos:prefLabel "Modelling software"@en ;
-                                                        rdfs:subClassOf <http://emmo.info/emmo/application/software#Software> .
+                                                        rdfs:subClassOf <http://emmo.info/emmo/domain/software#Software> .
 
 
-###  http://emmo.info/emmo/application/software#Operating_system
-<http://emmo.info/emmo/application/software#Operating_system> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Operating_system
+<http://emmo.info/emmo/domain/software#Operating_system> rdf:type owl:Class ;
 										skos:prefLabel "Operating system"@en ;
-                                                      rdfs:subClassOf <http://emmo.info/emmo/application/software#Software> .
+                                                      rdfs:subClassOf <http://emmo.info/emmo/domain/software#Software> .
 
 
-###  http://emmo.info/emmo/application/software#PlatformFramework
-<http://emmo.info/emmo/application/software#PlatformFramework> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#PlatformFramework
+<http://emmo.info/emmo/domain/software#PlatformFramework> rdf:type owl:Class ;
 										skos:prefLabel "PlatformFramework"@en ;
-                                                       rdfs:subClassOf <http://emmo.info/emmo/application/software#Software_platform> .
+                                                       rdfs:subClassOf <http://emmo.info/emmo/domain/software#Software_platform> .
 
 
-###  http://emmo.info/emmo/application/software#Post-processing_software
-<http://emmo.info/emmo/application/software#Post-processing_software> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Post-processing_software
+<http://emmo.info/emmo/domain/software#Post-processing_software> rdf:type owl:Class ;
 										skos:prefLabel "Post-processing software"@en ;
-                                                              rdfs:subClassOf <http://emmo.info/emmo/application/software#Pre-Post_processing_software> .
+                                                              rdfs:subClassOf <http://emmo.info/emmo/domain/software#Pre-Post_processing_software> .
 
 
-###  http://emmo.info/emmo/application/software#Pre-Post_processing_software
-<http://emmo.info/emmo/application/software#Pre-Post_processing_software> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Pre-Post_processing_software
+<http://emmo.info/emmo/domain/software#Pre-Post_processing_software> rdf:type owl:Class ;
 										skos:prefLabel "Pre-Post processing software"@en ;
-                                                                  rdfs:subClassOf <http://emmo.info/emmo/application/software#Software> .
+                                                                  rdfs:subClassOf <http://emmo.info/emmo/domain/software#Software> .
 
 
-###  http://emmo.info/emmo/application/software#Pre-processing_software
-<http://emmo.info/emmo/application/software#Pre-processing_software> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Pre-processing_software
+<http://emmo.info/emmo/domain/software#Pre-processing_software> rdf:type owl:Class ;
 										skos:prefLabel "Pre-processing software"@en ;
-                                                             rdfs:subClassOf <http://emmo.info/emmo/application/software#Pre-Post_processing_software> .
+                                                             rdfs:subClassOf <http://emmo.info/emmo/domain/software#Pre-Post_processing_software> .
 
 
-###  http://emmo.info/emmo/application/software#Sintering_AM_software
-<http://emmo.info/emmo/application/software#Sintering_AM_software> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Sintering_AM_software
+<http://emmo.info/emmo/domain/software#Sintering_AM_software> rdf:type owl:Class ;
 										skos:prefLabel "Sintering AM software"@en ;
-                                                           rdfs:subClassOf <http://emmo.info/emmo/application/software#Continuum_software> .
+                                                           rdfs:subClassOf <http://emmo.info/emmo/domain/software#Continuum_software> .
 
 
-###  http://emmo.info/emmo/application/software#SoftwareEcosystem
-<http://emmo.info/emmo/application/software#SoftwareEcosystem> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#SoftwareEcosystem
+<http://emmo.info/emmo/domain/software#SoftwareEcosystem> rdf:type owl:Class ;
 										skos:prefLabel "SoftwareEcosystem"@en ;
-                                                       rdfs:subClassOf <http://emmo.info/emmo/application/software#Software_platform> .
+                                                       rdfs:subClassOf <http://emmo.info/emmo/domain/software#Software_platform> .
 
 
-###  http://emmo.info/emmo/application/software#Software_platform
-<http://emmo.info/emmo/application/software#Software_platform> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Software_platform
+<http://emmo.info/emmo/domain/software#Software_platform> rdf:type owl:Class ;
 										skos:prefLabel "Software platform"@en ;
-                                                       rdfs:subClassOf <http://emmo.info/emmo/application/software#Software> .
+                                                       rdfs:subClassOf <http://emmo.info/emmo/domain/software#Software> .
 
 
-###  http://emmo.info/emmo/application/software#Software_using_structured_data
-<http://emmo.info/emmo/application/software#Software_using_structured_data> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Software_using_structured_data
+<http://emmo.info/emmo/domain/software#Software_using_structured_data> rdf:type owl:Class ;
 										skos:prefLabel "Software using structured data"@en ;
-                                                                    rdfs:subClassOf <http://emmo.info/emmo/application/software#Database_software> .
+                                                                    rdfs:subClassOf <http://emmo.info/emmo/domain/software#Database_software> .
 
 
-###  http://emmo.info/emmo/application/software#Software_using_unstructured_data
-<http://emmo.info/emmo/application/software#Software_using_unstructured_data> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Software_using_unstructured_data
+<http://emmo.info/emmo/domain/software#Software_using_unstructured_data> rdf:type owl:Class ;
 										skos:prefLabel "Software using unstructured data"@en ;
-                                                                      rdfs:subClassOf <http://emmo.info/emmo/application/software#Database_software> .
+                                                                      rdfs:subClassOf <http://emmo.info/emmo/domain/software#Database_software> .
 
 
-###  http://emmo.info/emmo/application/software#Windows
-<http://emmo.info/emmo/application/software#Windows> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Windows
+<http://emmo.info/emmo/domain/software#Windows> rdf:type owl:Class ;
 										skos:prefLabel "Windows"@en ;
-                                             rdfs:subClassOf <http://emmo.info/emmo/application/software#Operating_system> .
+                                             rdfs:subClassOf <http://emmo.info/emmo/domain/software#Operating_system> .
 
 
-###  http://emmo.info/emmo/application/software#Software
-<http://emmo.info/emmo/application/software#Software> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Software
+<http://emmo.info/emmo/domain/software#Software> rdf:type owl:Class ;
 										skos:prefLabel "Software"@en ;
                                               rdfs:subClassOf <http://emmo.info/emmo#EMMO_00b85655_f20c_4e83_b90e_094e8ea7e48f> ;
                                               rdfs:comment "software, i.e., an entity representing a software product"^^xsd:string .
 
 
-###  http://emmo.info/emmo/application/software#CatCalc
-<http://emmo.info/emmo/application/software#CatCalc> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#CatCalc
+<http://emmo.info/emmo/domain/software#CatCalc> rdf:type owl:Class ;
 										skos:prefLabel "CatCalc"@en ;
-                                                  rdfs:subClassOf <http://emmo.info/emmo/application/software#Thermodynamics_software> .
+                                                  rdfs:subClassOf <http://emmo.info/emmo/domain/software#Thermodynamics_software> .
 
 
-###  http://emmo.info/emmo/application/software#DICTRA
-<http://emmo.info/emmo/application/software#DICTRA> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#DICTRA
+<http://emmo.info/emmo/domain/software#DICTRA> rdf:type owl:Class ;
 										skos:prefLabel "DICTRA"@en ;
-                                                 rdfs:subClassOf <http://emmo.info/emmo/application/software#Thermodynamics_software> .
+                                                 rdfs:subClassOf <http://emmo.info/emmo/domain/software#Thermodynamics_software> .
 
 
-###  http://emmo.info/emmo/application/software#FactSage
-<http://emmo.info/emmo/application/software#FactSage> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#FactSage
+<http://emmo.info/emmo/domain/software#FactSage> rdf:type owl:Class ;
 										skos:prefLabel "FactSage"@en ;
-                                                   rdfs:subClassOf <http://emmo.info/emmo/application/software#Thermodynamics_software> .
+                                                   rdfs:subClassOf <http://emmo.info/emmo/domain/software#Thermodynamics_software> .
 
 
-###  http://emmo.info/emmo/application/software#JMatPro
-<http://emmo.info/emmo/application/software#JMatPro> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#JMatPro
+<http://emmo.info/emmo/domain/software#JMatPro> rdf:type owl:Class ;
 										skos:prefLabel "JMatPro"@en ;
-                                                  rdfs:subClassOf <http://emmo.info/emmo/application/software#Thermodynamics_software> .
+                                                  rdfs:subClassOf <http://emmo.info/emmo/domain/software#Thermodynamics_software> .
 
 
-###  http://emmo.info/emmo/application/software#MTDate
-<http://emmo.info/emmo/application/software#MTDate> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#MTDate
+<http://emmo.info/emmo/domain/software#MTDate> rdf:type owl:Class ;
 										skos:prefLabel "MTDate"@en ;
-                                                 rdfs:subClassOf <http://emmo.info/emmo/application/software#Thermodynamics_software> .
+                                                 rdfs:subClassOf <http://emmo.info/emmo/domain/software#Thermodynamics_software> .
 
 
-###  http://emmo.info/emmo/application/software#MatCalc
-<http://emmo.info/emmo/application/software#MatCalc> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#MatCalc
+<http://emmo.info/emmo/domain/software#MatCalc> rdf:type owl:Class ;
 										skos:prefLabel "MatCalc"@en ;
-                                                  rdfs:subClassOf <http://emmo.info/emmo/application/software#Thermodynamics_software> .
+                                                  rdfs:subClassOf <http://emmo.info/emmo/domain/software#Thermodynamics_software> .
 
 
-###  http://emmo.info/emmo/application/software#Open_Calphad
-<http://emmo.info/emmo/application/software#Open_Calphad> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Open_Calphad
+<http://emmo.info/emmo/domain/software#Open_Calphad> rdf:type owl:Class ;
 										skos:prefLabel "Open Calphad"@en ;
-                                                       rdfs:subClassOf <http://emmo.info/emmo/application/software#Thermodynamics_software> .
+                                                       rdfs:subClassOf <http://emmo.info/emmo/domain/software#Thermodynamics_software> .
 
 
-###  http://emmo.info/emmo/application/software#Pandat
-<http://emmo.info/emmo/application/software#Pandat> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Pandat
+<http://emmo.info/emmo/domain/software#Pandat> rdf:type owl:Class ;
 										skos:prefLabel "Pandat"@en ;
-                                                 rdfs:subClassOf <http://emmo.info/emmo/application/software#Thermodynamics_software> .
+                                                 rdfs:subClassOf <http://emmo.info/emmo/domain/software#Thermodynamics_software> .
 
 
-###  http://emmo.info/emmo/application/software#PrecipiCalc
-<http://emmo.info/emmo/application/software#PrecipiCalc> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#PrecipiCalc
+<http://emmo.info/emmo/domain/software#PrecipiCalc> rdf:type owl:Class ;
 										skos:prefLabel "PrecipiCalc"@en ;
-                                                      rdfs:subClassOf <http://emmo.info/emmo/application/software#Thermodynamics_software> .
+                                                      rdfs:subClassOf <http://emmo.info/emmo/domain/software#Thermodynamics_software> .
 
 
-###  http://emmo.info/emmo/application/software#TC-Prisma
-<http://emmo.info/emmo/application/software#TC-Prisma> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#TC-Prisma
+<http://emmo.info/emmo/domain/software#TC-Prisma> rdf:type owl:Class ;
 										skos:prefLabel "TC-Prisma"@en ;
-                                                    rdfs:subClassOf <http://emmo.info/emmo/application/software#Thermodynamics_software> .
+                                                    rdfs:subClassOf <http://emmo.info/emmo/domain/software#Thermodynamics_software> .
 
 
-###  http://emmo.info/emmo/application/software#Thermo-Calc
-<http://emmo.info/emmo/application/software#Thermo-Calc> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Thermo-Calc
+<http://emmo.info/emmo/domain/software#Thermo-Calc> rdf:type owl:Class ;
 										skos:prefLabel "Thermo-Calc"@en ;
-                                                      rdfs:subClassOf <http://emmo.info/emmo/application/software#Thermodynamics_software> .
+                                                      rdfs:subClassOf <http://emmo.info/emmo/domain/software#Thermodynamics_software> .
 
 
-###  http://emmo.info/emmo/application/software#Thermodynamics_software
-<http://emmo.info/emmo/application/software#Thermodynamics_software> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Thermodynamics_software
+<http://emmo.info/emmo/domain/software#Thermodynamics_software> rdf:type owl:Class ;
 										skos:prefLabel "Thermodynamics software"@en ;
-                                                                  rdfs:subClassOf <http://emmo.info/emmo/application/software#Continuum_software> .
+                                                                  rdfs:subClassOf <http://emmo.info/emmo/domain/software#Continuum_software> .
 
 
-###  http://emmo.info/emmo/application/software#Abaqus
-<http://emmo.info/emmo/application/software#Abaqus> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Abaqus
+<http://emmo.info/emmo/domain/software#Abaqus> rdf:type owl:Class ;
 										skos:prefLabel "Abaqus"@en ;
-                                                rdfs:subClassOf <http://emmo.info/emmo/application/software#Thermomechanics_software> .
+                                                rdfs:subClassOf <http://emmo.info/emmo/domain/software#Thermomechanics_software> .
 
 
-###  http://emmo.info/emmo/application/software#Ansys
-<http://emmo.info/emmo/application/software#Ansys> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Ansys
+<http://emmo.info/emmo/domain/software#Ansys> rdf:type owl:Class ;
 										skos:prefLabel "Ansys"@en ;
-                                               rdfs:subClassOf <http://emmo.info/emmo/application/software#Thermomechanics_software> .
+                                               rdfs:subClassOf <http://emmo.info/emmo/domain/software#Thermomechanics_software> .
 
 
-###  http://emmo.info/emmo/application/software#Diffpack
-<http://emmo.info/emmo/application/software#Diffpack> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Diffpack
+<http://emmo.info/emmo/domain/software#Diffpack> rdf:type owl:Class ;
 										skos:prefLabel "Diffpack"@en ;
-                                                  rdfs:subClassOf <http://emmo.info/emmo/application/software#Thermomechanics_software> .
+                                                  rdfs:subClassOf <http://emmo.info/emmo/domain/software#Thermomechanics_software> .
 
 
-###  http://emmo.info/emmo/application/software#FEAP
-<http://emmo.info/emmo/application/software#FEAP> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#FEAP
+<http://emmo.info/emmo/domain/software#FEAP> rdf:type owl:Class ;
 										skos:prefLabel "FEAP"@en ;
-                                              rdfs:subClassOf <http://emmo.info/emmo/application/software#Thermomechanics_software> .
+                                              rdfs:subClassOf <http://emmo.info/emmo/domain/software#Thermomechanics_software> .
 
 
-###  http://emmo.info/emmo/application/software#FEDEM
-<http://emmo.info/emmo/application/software#FEDEM> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#FEDEM
+<http://emmo.info/emmo/domain/software#FEDEM> rdf:type owl:Class ;
 										skos:prefLabel "FEDEM"@en ;
-                                               rdfs:subClassOf <http://emmo.info/emmo/application/software#Thermomechanics_software> .
+                                               rdfs:subClassOf <http://emmo.info/emmo/domain/software#Thermomechanics_software> .
 
 
-###  http://emmo.info/emmo/application/software#MSC_Marc
-<http://emmo.info/emmo/application/software#MSC_Marc> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#MSC_Marc
+<http://emmo.info/emmo/domain/software#MSC_Marc> rdf:type owl:Class ;
 										skos:prefLabel "MSC Marc"@en ;
-                                                  rdfs:subClassOf <http://emmo.info/emmo/application/software#Thermomechanics_software> .
+                                                  rdfs:subClassOf <http://emmo.info/emmo/domain/software#Thermomechanics_software> .
 
 
-###  http://emmo.info/emmo/application/software#PAMCrash
-<http://emmo.info/emmo/application/software#PAMCrash> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#PAMCrash
+<http://emmo.info/emmo/domain/software#PAMCrash> rdf:type owl:Class ;
 										skos:prefLabel "PAMCrash"@en ;
-                                                  rdfs:subClassOf <http://emmo.info/emmo/application/software#Thermomechanics_software> .
+                                                  rdfs:subClassOf <http://emmo.info/emmo/domain/software#Thermomechanics_software> .
 
 
-###  http://emmo.info/emmo/application/software#SAMCef
-<http://emmo.info/emmo/application/software#SAMCef> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#SAMCef
+<http://emmo.info/emmo/domain/software#SAMCef> rdf:type owl:Class ;
 										skos:prefLabel "SAMCef"@en ;
-                                                rdfs:subClassOf <http://emmo.info/emmo/application/software#Thermomechanics_software> .
+                                                rdfs:subClassOf <http://emmo.info/emmo/domain/software#Thermomechanics_software> .
 
 
-###  http://emmo.info/emmo/application/software#Thermomechanics_software
-<http://emmo.info/emmo/application/software#Thermomechanics_software> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Thermomechanics_software
+<http://emmo.info/emmo/domain/software#Thermomechanics_software> rdf:type owl:Class ;
 										skos:prefLabel "Thermomechanics software"@en ;
-                                                                  rdfs:subClassOf <http://emmo.info/emmo/application/software#Continuum_software> .
+                                                                  rdfs:subClassOf <http://emmo.info/emmo/domain/software#Continuum_software> .
 
 
-###  http://emmo.info/emmo/application/software#Paraview
-<http://emmo.info/emmo/application/software#Paraview> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Paraview
+<http://emmo.info/emmo/domain/software#Paraview> rdf:type owl:Class ;
 										skos:prefLabel "Paraview"@en ;
-                                        rdfs:subClassOf <http://emmo.info/emmo/application/software#Visualisation> .
+                                        rdfs:subClassOf <http://emmo.info/emmo/domain/software#Visualisation> .
 
 
-###  http://emmo.info/emmo/application/software#Visualisation
-<http://emmo.info/emmo/application/software#Visualisation> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#Visualisation
+<http://emmo.info/emmo/domain/software#Visualisation> rdf:type owl:Class ;
 										skos:prefLabel "Visualisation"@en ;
-                                             rdfs:subClassOf <http://emmo.info/emmo/application/software#Post-processing_software> .
+                                             rdfs:subClassOf <http://emmo.info/emmo/domain/software#Post-processing_software> .
 
 
-###  http://emmo.info/emmo/application/software#simpleware
-<http://emmo.info/emmo/application/software#simpleware> rdf:type owl:Class ;
+###  http://emmo.info/emmo/domain/software#simpleware
+<http://emmo.info/emmo/domain/software#simpleware> rdf:type owl:Class ;
 										skos:prefLabel "simpleware"@en ;
-                                          rdfs:subClassOf <http://emmo.info/emmo/application/software#Visualisation> .
+                                          rdfs:subClassOf <http://emmo.info/emmo/domain/software#Visualisation> .
