@@ -589,7 +589,7 @@ H=∑ni=1hia∗i  (n≥3)""" ;
 [ rdf:type owl:AllDisjointClasses ;
    owl:members ( emmo:EMMO_21205421_5783_4d3e_81e5_10c5d894a88a
                  materials:EMMO_8b0923ab_b500_477b_9ce9_8b3a3e4dc4f2
-                 <http://emmo.info/emmo#660a4964_0333_4663_bc66_e93ef59b0679>
+                 <http://emmo.info/emmo#EMMO_660a4964_0333_4663_bc66_e93ef59b0679>
                )
  ] .
 
