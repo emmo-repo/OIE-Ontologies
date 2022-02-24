@@ -8,7 +8,7 @@ The OIE Ontologies are built with an alignment with EMMO and some of its modules
 
 | Imported Ontologies | Version           |
 | ------------------- | ----------------- |
-| EMMO                | 1.0.0-beta2       |
+| EMMO                | 1.0.0-beta3       |
 
 ## Attribution and Credits
 

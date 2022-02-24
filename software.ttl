@@ -21,6 +21,10 @@
                                                        "Pierluigi Del Nostro" ;
                                        owl:versionInfo 0.1 .
 
+####### EMMO mapping:
+### CommercialProduct    -> domain-manufacturing     emmo:EMMO_00b85655_f20c_4e83_b90e_094e8ea7e48f
+
+
 #################################################################
 #    Classes
 #################################################################

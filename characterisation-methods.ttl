@@ -7,15 +7,19 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix characterisation-methods: <http://emmo.info/emmo/domain/oie/characterisation-methods#> .
+@prefix chameo: <http://emmo.info/emmo/domain/chameo/chameo#> .
 @base <http://emmo.info/emmo/domain/oie/characterisation-methods> .
 
 <http://emmo.info/emmo/domain/oie/characterisation-methods> rdf:type owl:Ontology ;
-		                               owl:imports <http://emmo.info/emmo/1.0.0-beta2/middle/properties> ;
+		                               owl:imports <http://emmo.info/emmo/1.0.0-beta3/middle/semiotics> ,
+									               <http://emmo.info/emmo/domain/chameo/chameo> ;
 									   dcterms:contributor "Goldbeck Consulting Ltd (UK)" ;
                                        dcterms:creator "Daniele Toti" ,
                                                        "Gerhard Goldbeck" ,
                                                        "Pierluigi Del Nostro" .
-		
+
+####### EMMO mapping:
+###	Observation         -> middle-semiotics   emmo:EMMO_3b19eab4_79be_4b02_bdaf_ecf1f0067a68
 
 #################################################################
 #    Classes
@@ -24,6 +28,7 @@
 ###  http://emmo.info/emmo/domain/oie/characterisation-methods#CharacterisationMethod
 characterisation-methods:CharacterisationMethod rdf:type owl:Class ;
 rdfs:subClassOf emmo:EMMO_3b19eab4_79be_4b02_bdaf_ecf1f0067a68 ;
+owl:equivalentClass chameo:CharacterisationMethod ;
 skos:prefLabel "CharacterisationMethod"@en .
 
 
