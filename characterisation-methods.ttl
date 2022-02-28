@@ -29,7 +29,8 @@
 characterisation-methods:CharacterisationMethod rdf:type owl:Class ;
 rdfs:subClassOf emmo:EMMO_3b19eab4_79be_4b02_bdaf_ecf1f0067a68 ;
 owl:equivalentClass chameo:CharacterisationMethod ;
-skos:prefLabel "CharacterisationMethod"@en .
+skos:prefLabel "CharacterisationMethod"@en ;
+skos:altLabel "CharacterizationMethod"@en .
 
 
 ###  http://emmo.info/emmo/domain/oie/characterisation-methods#AtomicEmissionSpectroscopy
