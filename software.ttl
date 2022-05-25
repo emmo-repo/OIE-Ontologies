@@ -1,3 +1,4 @@
+@prefix emmo: <http://emmo.info/emmo#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -23,6 +24,9 @@
 
 ####### EMMO mapping:
 ### CommercialProduct    -> domain-manufacturing     emmo:EMMO_00b85655_f20c_4e83_b90e_094e8ea7e48f
+### ApplicationProgram   -> middle-data              emmo:EMMO_3b031fa9_8623_4ea5_8b57_bcafb70c5c8b
+### Program              -> middle-data              emmo:EMMO_65411b3d_c8d3_4111_86a9_a2ce0a64c647
+### SystemProgram        -> middle-data              emmo:EMMO_58b17cac_3125_4486_9b9c_8c45ac254040
 
 
 #################################################################
@@ -741,13 +745,14 @@ software:ContinuumSoftware rdf:type owl:Class ;
 ###  http://emmo.info/emmo/domain/oie/software#CorrosionSoftware
 software:CorrosionSoftware rdf:type owl:Class ;
 	skos:prefLabel "Corrosion software"@en ;
-	  rdfs:subClassOf software:ContinuumSoftware .
+	rdfs:subClassOf software:ContinuumSoftware .
 
 
 ###  http://emmo.info/emmo/domain/oie/software#DatabaseSoftware
 software:DatabaseSoftware rdf:type owl:Class ;
 	skos:prefLabel "Database software"@en ;
-	 rdfs:subClassOf software:Software .
+	rdfs:subClassOf software:Software ;
+	rdfs:subClassOf emmo:EMMO_3b031fa9_8623_4ea5_8b57_bcafb70c5c8b .
 
 
 ###  http://emmo.info/emmo/domain/oie/software#Database
@@ -783,19 +788,21 @@ software:MesoscopicSoftware rdf:type owl:Class ;
 ###  http://emmo.info/emmo/domain/oie/software#ModellingSoftware
 software:ModellingSoftware rdf:type owl:Class ;
 	skos:prefLabel "Modelling software"@en ;
-	  rdfs:subClassOf software:Software .
+	rdfs:subClassOf software:Software ;
+	rdfs:subClassOf emmo:EMMO_3b031fa9_8623_4ea5_8b57_bcafb70c5c8b .
 
 
 ###  http://emmo.info/emmo/domain/oie/software#OperatingSystem
 software:OperatingSystem rdf:type owl:Class ;
 	skos:prefLabel "Operating system"@en ;
-	rdfs:subClassOf software:Software .
+	rdfs:subClassOf software:Software ;
+	owl:equivalentClass emmo:EMMO_58b17cac_3125_4486_9b9c_8c45ac254040 .
 
 
 ###  http://emmo.info/emmo/domain/oie/software#PlatformFramework
 software:PlatformFramework rdf:type owl:Class ;
 	skos:prefLabel "PlatformFramework"@en ;
-	 rdfs:subClassOf software:SoftwarePlatform .
+	rdfs:subClassOf software:SoftwarePlatform .
 
 
 ###  http://emmo.info/emmo/domain/oie/software#Post-ProcessingSoftware
@@ -807,7 +814,8 @@ software:Post-ProcessingSoftware rdf:type owl:Class ;
 ###  http://emmo.info/emmo/domain/oie/software#Pre-PostProcessingSoftware
 software:Pre-PostProcessingSoftware rdf:type owl:Class ;
 	skos:prefLabel "Pre-Post processing software"@en ;
-	            rdfs:subClassOf software:Software .
+	rdfs:subClassOf software:Software ;
+	rdfs:subClassOf emmo:EMMO_3b031fa9_8623_4ea5_8b57_bcafb70c5c8b .
 
 
 ###  http://emmo.info/emmo/domain/oie/software#Pre-ProcessingSoftware
@@ -831,7 +839,8 @@ software:SoftwareEcosystem rdf:type owl:Class ;
 ###  http://emmo.info/emmo/domain/oie/software#SoftwarePlatform
 software:SoftwarePlatform rdf:type owl:Class ;
 	skos:prefLabel "Software platform"@en ;
-	 rdfs:subClassOf software:Software .
+	rdfs:subClassOf software:Software ;
+	rdfs:subClassOf emmo:EMMO_3b031fa9_8623_4ea5_8b57_bcafb70c5c8b .
 
 
 ###  http://emmo.info/emmo/domain/oie/software#SoftwareUsingStructuredData
@@ -855,8 +864,9 @@ software:Windows rdf:type owl:Class ;
 ###  http://emmo.info/emmo/domain/oie/software#Software
 software:Software rdf:type owl:Class ;
 	skos:prefLabel "Software"@en ;
-                                              rdfs:subClassOf manufacturing:EMMO_00b85655_f20c_4e83_b90e_094e8ea7e48f ;
-                                              rdfs:comment "software, i.e., an entity representing a software product"^^xsd:string .
+    rdfs:subClassOf manufacturing:EMMO_00b85655_f20c_4e83_b90e_094e8ea7e48f ;
+    owl:equivalentClass emmo:EMMO_65411b3d_c8d3_4111_86a9_a2ce0a64c647 ;
+    rdfs:comment "software, i.e., an entity representing a software product"^^xsd:string .
 
 
 ###  http://emmo.info/emmo/domain/oie/software#CatCalc
